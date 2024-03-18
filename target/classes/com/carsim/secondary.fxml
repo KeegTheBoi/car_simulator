@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox alignment="CENTER" onKeyPressed="#handleInput" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carsim.SecondaryController">
+    <children>
+      <AnchorPane prefHeight="291.0" prefWidth="527.0">
+         <children>
+            <Rectangle fx:id="platform" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="31.0" layoutY="262.0" stroke="BLACK" strokeType="INSIDE" width="1300.0" />
+            <AnchorPane fx:id="car" focusTraversable="true" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="182.0" scaleX="1.5" scaleY="1.5">
+               <children>
+                  <ImageView fitHeight="130.0" fitWidth="269.0" layoutY="-39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@car.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="backTyreImg" fitHeight="25.0" fitWidth="28.0" layoutX="41.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@tyre.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="frontTyreImg" fitHeight="25.0" fitWidth="28.0" layoutX="151.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@tyre.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Rectangle fx:id="platform1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="31.0" layoutY="152.0" stroke="BLACK" strokeType="INSIDE" width="1300.0" />
+            <AnchorPane fx:id="car1" focusTraversable="true" layoutX="-10.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="182.0">
+               <children>
+                  <ImageView fx:id="backTyreImg1" fitHeight="44.0" fitWidth="65.0" layoutX="44.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@tyre.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="frontTyreImg1" fitHeight="44.0" fitWidth="65.0" layoutX="200.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@tyre.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle fx:id="layered" arcHeight="5.0" arcWidth="5.0" fill="#ff1f38" height="30.0" layoutX="19.0" stroke="BLACK" strokeType="INSIDE" width="238.0" />
+               </children>
+            </AnchorPane>
+            <Rectangle fx:id="platform11" arcHeight="5.0" arcWidth="5.0" fill="#000407" height="31.0" layoutX="3.0" layoutY="42.0" stroke="BLACK" strokeType="INSIDE" width="1300.0" />
+            <AnchorPane fx:id="car11" focusTraversable="true" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="182.0">
+               <children>
+                  <ImageView fitHeight="130.0" fitWidth="269.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@lambo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="backTyreImg11" blendMode="DIFFERENCE" fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@tyre.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="frontTyreImg11" blendMode="DIFFERENCE" fitHeight="48.0" fitWidth="50.0" layoutX="182.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@tyre.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+        <Button fx:id="secondaryButton" cacheShape="false" onAction="#switchToPrimary" text="Switch to Primary View" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
